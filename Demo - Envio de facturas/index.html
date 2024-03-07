@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Koalas Software - RPA</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="../script_demos/script.js"></script>
+
+</head>
+
+<body>
+    
+    <form>
+        <div class="form-group col-md-6 text-center mx-auto">
+            <img src="images/logoKoala.png" alt="Imagen de ejemplo" style="max-width: 100%;">
+        </div>
+    
+        <h1>Facturación</h1>
+    
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="NIT Proveedor">
+        </div>
+        <div class="form-group col-md-6">
+        <input type="text" class="form-control "  placeholder="Fecha de vencimiento">
+        </div>
+        </div>
+
+        <div class="form-row">  
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control " placeholder="Numero de factura">
+        </div>
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control " placeholder="IVA">
+        </div>  
+        </div>
+        
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="Rete IVA">
+        </div>
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control"  placeholder="Rete FTE">
+        </div>
+        </div>
+        
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="Rete ICA">
+        </div>
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control " placeholder="Total bruto">
+        </div>
+        </div>
+
+        <button type="button" type="button" onclick="enviar()" class="btn btn-block btn-register">Facturar</button>  
+
+        <div id="footer-container">
+            <img src="images/nombreApp.png" alt="Imagen de pie de página">
+        </div>
+    </form>
+
+    <div id="success-message">Factura enviada con éxito</div>
+
+</body>
+
+</html>

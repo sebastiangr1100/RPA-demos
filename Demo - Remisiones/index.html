@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Koalas Software - RPA</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="../script_demos/script.js"></script>
+
+</head>
+<body>
+    
+
+    <div class="form-container">
+    <form id="miFormulario">
+      <div class="form-group col-md-6 text-center mx-auto">
+        <img src="images/logoKoala.png" alt="Imagen de ejemplo" style="max-width: 100%;">
+    </div>
+    <h1>Remisión</h1>
+
+      <div class="form-group">
+        <b><label for="input1">Fecha de remision</label></b>
+        <input type="text" class="form-control" id="input1"  placeholder="Fecha de remision">
+      </div>
+
+      <div class="form-group">
+        <b><label for="input2">No. remision</label></b>
+        <input type="text" class="form-control " id="input2" placeholder="No. remision">
+      </div>
+
+      <div class="form-group">
+        <b><label for="input3">No. orden de compra</label></b>
+        <input type="text" class="form-control " id="input3" placeholder="No. orden de compra">
+      </div>
+
+      <div class="form-group">
+        <b><label for="input4">NIT Cliente</label></b>
+        <input type="text" class="form-control " id="input4" placeholder="NIT Cliente">
+      </div>
+
+      <div class="form-group">
+        <b><label for="input5">Nombre de cliente</label></b>
+        <input type="text" class="form-control " id="input5" placeholder="Nombre Cliente">
+      </div>
+
+      <div id="productos-container">
+        <b><label>Detalles de Productos</label></b>
+        <div class="producto-input">
+          <input type="text" class="form-control" placeholder="Producto 1">
+          <span class="add-producto" onclick="agregarProducto()">+</span>
+        </div>
+      </div>
+
+      <div id="otros-inputs" class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Valor Neto">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control " placeholder="Impuestos IVA">
+        </div>
+      </div>
+
+      <button type="button" onclick="enviar()" class="btn btn-primary" id="enviar-btn">Remisionar</button>
+      <div id="footer-container">
+        <img src="images/nombreApp.png" alt="Imagen de pie de página">
+    </div>
+    </form>
+
+    <div id="success-message">Remisión enviada con éxito</div>
+
+    
+</div>
+</body>
+
+</html>
